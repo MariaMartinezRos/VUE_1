@@ -3,6 +3,7 @@ import { RouterLink, RouterView } from 'vue-router'
 import HelloWorld from './components/HelloWorld.vue'
 import { ref } from 'vue'
 import Contador from './components/Contador.vue'
+import ListaDeTareas from './components/ListaDeTareas.vue'
 
 const contador = ref(0)
 
@@ -30,6 +31,8 @@ const decrementar = () => {
   </header>
 
   <RouterView />
+
+  <ListaDeTareas />
 
   <Contador />
   <p>{{ contador }}</p>
