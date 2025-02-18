@@ -1,0 +1,11 @@
+## Tipos de código en Vue.js 3:
+Vue.js 3 ofrece dos formas de escribir código:
+
+
+# Options API: 
+Método tradicional donde los datos, métodos y ciclos de vida se definen en un objeto.
+
+# Composition API: 
+Nueva forma más flexible que organiza la lógica por funcionalidad, facilitando la 
+reutilización del código. Además, Script Setup es una característica de Vue 3 que simplifica la 
+escritura de componentes.

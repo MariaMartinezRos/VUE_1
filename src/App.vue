@@ -1,6 +1,18 @@
 <script setup>
 import { RouterLink, RouterView } from 'vue-router'
 import HelloWorld from './components/HelloWorld.vue'
+import { ref } from 'vue'
+import Contador from './components/Contador.vue'
+
+const contador = ref(0)
+
+const incrementar = () => {
+  contador.value++
+}
+
+const decrementar = () => {
+  contador.value--
+}
 </script>
 
 <template>
@@ -18,6 +30,11 @@ import HelloWorld from './components/HelloWorld.vue'
   </header>
 
   <RouterView />
+
+  <Contador />
+  <p>{{ contador }}</p>
+  <button @click="incrementar">Incrementar</button>
+  <button @click="decrementar">Decrementar</button>
 </template>
 
 <style scoped>
