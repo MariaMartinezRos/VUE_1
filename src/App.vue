@@ -4,6 +4,7 @@ import HelloWorld from './components/HelloWorld.vue'
 import { ref } from 'vue'
 import Contador from './components/Contador.vue'
 import ListaDeTareas from './components/ListaDeTareas.vue'
+import Header_1 from '@/components/Header_1.vue'
 
 const contador = ref(0)
 
